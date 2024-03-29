@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+              
+        body {
+            height: auto;
+            width: auto;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            font-family: Arial, sans-serif;
+            border: 1px solid transparent;
+            margin-left: 23rem;
+        }
+        
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="registration-form">
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <label for="name" style="color: #333;">Name:</label>
+                <input type="text" id="name" name="name" required style="width: 400px; padding: 8px; border: 1px solid #ccc;">
+            </div>
+            <div class="form-group">
+                <label for="email" style="color: #333;">Email:</label>
+                <input type="email" id="email" name="email" required style="width: 400px; padding: 8px; border: 1px solid #ccc;">
+            </div>
+            <div class="form-group">
+                <label for="password" style="color: #333;">Password:</label>
+                <input type="password" id="password" name="password" required style="width: 400px; padding: 8px; border: 1px solid #ccc;">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password" style="color: #333;">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required style="width: 400px; padding: 8px; border: 1px solid #ccc;">
+            </div>
+            <div class="form-group">
+                <label for="phone" style="color: #333;">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required style="width: 400px; padding: 8px; border: 1px solid #ccc;">
+            </div>
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Register</button>
+        </form>
+    </div>
+</body>
+</html>
